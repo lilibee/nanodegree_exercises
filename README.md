@@ -6,13 +6,6 @@ def reverse_names(name):
     name = name.split()
     name_new = name[1] + ',' + name[0]
     return name_new    
-'''
-    Fill in this function to return a new series where each name
-    in the input series has been transformed from the format
-    "Firstname Lastname" to "Lastname, FirstName".
-    
-    Try to use the Pandas apply() function rather than a loop.
-'''
  
 reverse_names = names.apply(reverse_names)
 
